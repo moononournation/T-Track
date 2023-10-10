@@ -111,7 +111,7 @@ void setup()
 #endif
 
   // Init Display
-  if (!canvasGfx->begin())
+  if (!canvasGfx->begin(80000000))
   {
     Serial.println("canvasGfx->begin() failed!");
   }
